@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Red Bull Te Dá Asas</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent d-flex justify-content-between fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand mr-auto" href="#">
+         <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg
+         " alt="Logo redbull">
+      </a>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav m-auto">
+            <li class="nav-item ">
+               <a class="nav-link mx-2 text-white font-weight-bold navbar-effect" href="#">TV</a>
+            </li>
+            <li class="nav-item mx-2">
+               <a class="nav-link text-white font-weight-bold navbar-effect" href="#">Eventos</a>
+            </li>
+            <li class="nav-item mx-2">
+               <a class="nav-link text-white font-weight-bold navbar-effect" href="#">Atletas</a>
+            </li>
+            <li class="nav-item mx-2">
+               <a class="nav-link text-white font-weight-bold navbar-effect" href="#">Produtos</a>
+            </li>
+         </ul>
+      </div>
+
+   <ul class="nav navbar-nav flex-row">
+      <li class="nav-item m-2">
+         <a class="nav-link navbar-effect" href="#" data-toggle="modal" data-target="#modalNewsletter"><img src="assets/img/user.png" alt="" style="height: 20px; filter: invert(100%) sepia(0%) saturate(7426%) hue-rotate(132deg) brightness(122%) contrast(115%);                                                                                        "></a>
+      </li>
+      <li class="nav-item m-2">
+         <a class="nav-link navbar-effect" href="#"><img src="assets/img/search.png" alt="" style="height: 20px; filter: invert(100%) sepia(0%) saturate(7426%) hue-rotate(132deg) brightness(122%) contrast(115%);"></a>
+      </li>
+   </ul>
+   </nav>
+
+
+   <main>
+      <!-- Carrossel, com navbar dentro. Cards em baixo -->
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="assets/img/italo-ferreira-retrato (1).jpeg" class="d-block w-100 filtro-imagem tamanho-imagem" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Surf</h5>
+                  <h2>Ítalo Ferreira, pronto pro ouro: 'Seria perfeito'</h2>
+                  <button type="button" class="btn btn-default botao-carousel text-white font-weight-bold mt-4">Leia a história</button>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="assets/img/to-be-by-neguin.jpeg" class="d-block w-100 filtro-imagem tamanho-imagem" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Dança</h5>
+                  <h2>'Sou um mensageiro das minhas artes', diz B-Boy Neguin</h2>
+                  <button type="button" class="btn btn-default botao-carousel mt-4">Leia a história</button>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="assets/img/skate-leticia-bufoni-backyard-2020.jpeg" class="d-block w-100 filtro-imagem tamanho-imagem" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Skate</h5>
+                  <h2>A pista de skate no quintal da casa da Leticia Bufoni</h2>
+                  <button type="button" class="btn btn-default botao-carousel text-white font-weight-bold mt-4">Leia a história</button>
+               </div>
+            </div>
+         </div>
+         
+         <ol class="carousel-indicators ml-5 text-white font-weight-bold">
+            <li data-target="#carousel" data-slide-to="0" class="active">
+               <p>Ítalo Ferreira, pronto pro ouro: 'Seria perfeito'</p>
+            </li>
+            <li data-target="#carousel" data-slide-to="1">
+               <p>'Sou um mensageiro das minhas artes', diz B-Boy Neguin</p>
+            </li>
+            <li data-target="#carousel" data-slide-to="2">
+               <p>A pista de skate no quintal da casa da Leticia Bufoni</p>
+            </li>
+         </ol>
+      </div>
+      <!-- Card deck -->
+      <div class="container">
+         <div class="card-deck w-100 my-5">
+            <div class="card">
+               <div class="card-img-top card-img-div">
+                  <img src="assets/img/corrida-wings-for-life-world-run-2020-oswald-pereira.jpeg" class="imagem-card w-100" alt="...">
+               </div>
+               <div class="card-body">
+                  <h5 class="card-title">Wings for Life World Run: inscrições estão abertas</h5>
+                  <p class="card-text text-muted">Wings for Life World Run 2021</p>
+               </div>
+            </div>
+            <div class="card">
+               <div class="card-img-top card-img-div">
+                  <img src="assets/img/futebol-red-bull-bragantino-nabi-abi-chedid-2020.jpeg" class="imagem-card w-100" alt="...">
+               </div>
+               <div class="card-body">
+                  <h5 class="card-title">Quer 3 motivos pra virar sócio-torcedor do Braga?</h5>
+                  <p class="card-text text-muted">Programa Red Bull Bragantino Experience estreita laços entre clube e torcedor</p>
+               </div>
+            </div>
+            <div class="card text-white">
+               <div class="card-img-div card-img">
+                  <img src="assets/img/until-18-s2-e3-bruna-kajiya.jpeg" class="imagem-card h-100" alt="...">
+               </div>
+               <div class="card-img-overlay">
+                  <h5>Until 18: Empresária? Bruna Kajiya preferiu o kitesurfe</h5>
+                  <p>Until 18 - S02 E05</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <div class="modal fade" id="modalNewsletter" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog w-380px">
+         <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+               <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg" alt="Logo redbull">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <div class="text-center">
+                  <h4>Cadastre-se para receber o melhor da Red Bull</h4>
+                  <p>Uma conta no mundo da Red Bull</p>
+               </div>
+               <form id="formulario" novalidate>
+                  <div class="form-group" id="formEmail">
+                     <label for="inputEmail">Email</label>
+                     <input onblur="validaEmail()" onkeyup="validaEmail()" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+                     <div class="invalid-feedback">
+                        Digite um email válido.
+                     </div>
+                  </div>
+                  <div class="form-group" id="formNome">
+                     <label for="inputNome">Nome</label>
+                     <input onblur="validaNome()" onkeyup="validaNome()" type="text" class="form-control" id="inputNome" required>
+                     <div class="invalid-feedback">
+                        Digite um nome válido.
+                     </div>
+                  </div>
+                  <div class="form-group" id="formIndicacao">
+                     <label for="inputIndicacao">Como encontrou a Red Bull?</label>
+                     <textarea onblur="validaIndicacao()" onkeyup="validaIndicacao()" class="form-control" id="inputIndicacao" rows="3" required></textarea>
+                     <div class="invalid-feedback">
+                        Digite uma mensagem válida.
+                     </div>
+                  </div>
+
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+               <button type="button" class="btn btn-default" type="submit" onclick="enviar()">Enviar</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="assets/js/script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+h2{
+    font-size: 3rem;
+}
+
+
+
+.navbar-toggler-icon{
+    background-image: url("../img/menu.png")!important;
+}
+
+.navbar-effect{
+    transition: all 1s;
+    border-radius: 22px;
+}
+
+.navbar-effect:hover{
+    background-color: rgba(0,22,43,.1);
+    transition-property: opacity,transform;
+    transition: all 1s;
+
+}   
+
+.filtro-imagem{
+    filter: brightness(80%);
+}
+
+.tamanho-imagem{
+    object-fit: cover;
+    height: 100vh;
+}
+
+.carousel-indicators{
+    right: auto;
+    justify-content: flex-start;
+}
+
+.carousel-indicators li{
+    width: 150px;
+    height: auto;
+    text-indent: 0;
+    background-color: transparent;
+    border-top: 2px solid rgba(255, 255, 255, 0.678);
+    
+}
+
+.carousel-indicators li.active{
+    border-top: 2px solid red;
+}
+
+.carousel-caption{
+    right: auto;
+    bottom: 25%;
+    left: 5%;
+    text-align: start;
+    width: 60%;
+}
+
+.btn-default{
+    background-color: #DB0A40;
+    color: white;
+    font-weight: bold;
+}
+
+.botao-carousel{
+    width: 12rem;
+    height: 3rem;
+}
+
+.btn-default:hover{
+    background-color: #F30B47;
+    color: white;
+}
+
+.card, .card-img{
+    border-radius: 20px;
+    max-height: 510px;
+}
+
+.card-img-overlay{
+    top: auto;
+}
+
+.card-img-div{
+    overflow: hidden;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.imagem-card{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform .5s;
+}
+
+.card:hover .imagem-card{
+    transform: scale(1.1);
+}
+
+.w-380px{
+    width: 380px;
+}
