@@ -2,8 +2,6 @@ h2{
     font-size: 3rem;
 }
 
-
-
 .navbar-toggler-icon{
     background-image: url("../img/menu.png")!important;
 }
@@ -20,13 +18,34 @@ h2{
 
 }   
 
+.scroll-down{
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-min{
+    background-color: transparent!important;
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-up{
+    background-color: #001E3C!important;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
 .filtro-imagem{
     filter: brightness(80%);
+}
+
+.carousel-item.active .filtro-imagem{
+    transform: scale(1.1);
 }
 
 .tamanho-imagem{
     object-fit: cover;
     height: 100vh;
+    transition: transform 10s;
 }
 
 .carousel-indicators{
@@ -93,10 +112,72 @@ h2{
     transition: transform .5s;
 }
 
-.card:hover .imagem-card{
+.content-card:hover .imagem-card{
     transform: scale(1.1);
 }
 
 .w-380px{
     width: 380px;
+}
+
+.bg-blue{
+    background-color: #001E3C;
+}
+
+.br-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.effect{
+    height: 101%;
+    width: 101%;
+    position: absolute;
+    top: -.5%;
+    left: -.5%;
+    background-color: #001e3cc2;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.social{
+    position: absolute;
+    top: 5%;
+    left: 43%;
+}
+
+.w-30{
+    width: 20%;
+}
+
+.social-logo{
+    transform: translateX(100px);
+    width: 100%;
+    opacity: 0;
+    transition: 0;
+}
+
+.profile-card:hover .transition-delay-0s{
+    transition: all 1s 0s;
+}
+.profile-card:hover .transition-delay-05s{
+    transition: all 1s .5s;
+    
+}
+.profile-card:hover .transition-delay-1s{
+    transition: all 1s 1s;
+    
+}
+
+.profile-card:hover .effect{
+    opacity: 100%;
+}
+
+.profile-card:hover .social-logo{
+    opacity: 100%;
+    transform: translateX(0);
+}
+
+.linkedin{
+    
 }

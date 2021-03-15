@@ -7,9 +7,7 @@ let formIndicacao = document.querySelector("#formIndicacao")
 let form = document.querySelector("#formulario")
 
 function validaEmail(){
-    if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1){
-        formEmail.classList.add("was-validated")
-    }
+    formEmail.classList.add("was-validated")
 }
 
 function validaNome(){
@@ -31,4 +29,30 @@ function enviar(){
     }else{
         alert("Preencha corretamente os dados.")
     }
+}
+
+window.addEventListener("scroll", hideNav)
+let lastScroll = 0
+function hideNav() {
+    let scroll = window.scrollY;
+    let bar = document.querySelector("#navegacao");
+    console.log("Scroll");
+    console.log(scroll);
+    console.log("LastScroll");
+    console.log(lastScroll);
+
+    if(scroll != 0){
+        if(scroll > lastScroll) {
+        bar.classList.remove("scroll-up");
+        bar.classList.add("scroll-down");
+        } else {
+        bar.classList.remove("scroll-down");
+        bar.classList.add("scroll-up");
+        }
+    }else{
+        bar.classList.add("scroll-min")
+        bar.classList.remove("scroll-down");
+        bar.classList.remove("scroll-up");
+    }
+    lastScroll = scroll;
 }
