@@ -2,6 +2,5 @@
 
 ## A fazer:
 <ul>
-  <li>Footer com redes sociais</li>
-  <li>Adicionar o resto das cards</li>
+  <li>Adicionar algumas animações</li>
 </ul>
