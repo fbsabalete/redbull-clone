@@ -12,7 +12,7 @@ h2{
 }
 
 .navbar-effect:hover{
-    background-color: rgba(0,22,43,.1);
+    background-color: rgba(177, 177, 177, 0.616);
     transition-property: opacity,transform;
     transition: all 1s;
 
@@ -92,7 +92,7 @@ h2{
 
 .card, .card-img{
     border-radius: 20px;
-    max-height: 510px;
+    max-height: auto;
 }
 
 .card-img-overlay{
@@ -178,6 +178,12 @@ h2{
     transform: translateX(0);
 }
 
-.linkedin{
-    
+@media (max-width: 576px) { 
+    .carousel-caption h3 { font-size: 1.3em;}
+    .carousel-caption p {font-size: 1.1em;}  
+
+    .carousel-indicators li{
+        width: 50px;
+        text-indent: -999px;
+    }
 }
